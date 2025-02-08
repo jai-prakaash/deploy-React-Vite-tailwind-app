@@ -102,8 +102,9 @@ export default {
 
         <li>
           <h3 className="text-xl font-semibold mb-2">Making the Git repository and publishing files and folders in it</h3>
+          <p>If you have already initialized Git in the folder,you dont need to Steps 6-11. </p>
           <p>If you haven't already initialized Git in the folder, run this: </p>
-
+        
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
             <code>git init </code>
           </pre>
