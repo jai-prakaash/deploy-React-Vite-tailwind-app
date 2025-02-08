@@ -94,7 +94,88 @@ export default {
 }`}
             </code>
           </pre>
+
+          <p>Now complete your project and make the chages you want to do in your projectss.</p>
         </li>
+
+
+
+        <li>
+          <h3 className="text-xl font-semibold mb-2">Making the Git repository and publishing files and folders in it</h3>
+          <p>If you haven't already initialized Git in the folder, run this: </p>
+
+          <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
+            <code>git init </code>
+          </pre>
+        </li>
+
+
+
+        <li>
+          <h3 className="text-xl font-semibold mb-2">Add a <code> .gitignore </code> File   </h3>
+          <p>React apps typically have a <code> .gitignore </code> file created for you, but if it’s not there, create one with the following contents to avoid pushing unnecessary files:</p>
+
+          <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
+            <code>
+            {`node_modules/
+build/
+.DS_Store
+*.log`}
+            </code>
+          </pre>
+        </li>
+
+
+
+        <li>
+          <h3 className="text-xl font-semibold mb-2"> Add Files to Git </h3>
+          <p> Add all the files to your git repository: </p>
+
+          <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
+            <code>git commit -m "Initial commit"</code>
+          </pre>
+        </li>
+
+
+        <li>
+          <h3 className="text-xl font-semibold mb-2">Create a Repository on GitHub </h3>
+          <p> Go to GitHub, log in, and create a new repository. Don’t initialize the repository with a README, <code>.gitignore </code>, or license, as you’ve already set those up locally. </p>
+
+          
+        </li>
+
+
+
+        <li>
+          <h3 className="text-xl font-semibold mb-2">Link the GitHub Repository </h3>
+          <p>After creating the repository on GitHub, you’ll be provided with a URL. Add this URL as a remote repository:  </p>
+
+          <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
+            <code>git remote add origin https://github.com/username/repository-name.git </code>
+          </pre>
+          <p>Replace <code> username</code> with your GitHub username and <code> repository-name</code> with the name of your GitHub repository.</p>
+        </li>
+
+
+
+
+        <li>
+          <h3 className="text-xl font-semibold mb-2"> Push the Code to GitHub</h3>
+          <p> Finally, push your code to GitHub: </p>
+
+          <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
+            <code>git push -u origin master</code>
+          </pre>
+
+          <p> If you're using <code> main</code> as the default branch (which GitHub does now), use:</p>
+
+          <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
+            <code>git push -u origin main</code>
+          </pre> 
+
+          <p> Check the repo in web if initializaion is sucesfull proceed to next step.</p>
+        </li>
+
 
         <li>
           <h3 className="text-xl font-semibold mb-2">Install GitHub Pages</h3>
