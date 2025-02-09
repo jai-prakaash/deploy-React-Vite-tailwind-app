@@ -20,7 +20,7 @@ const DeploymentGuide = () => {
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
             <code>npm create vite@latest &lt;project-name&gt; -- --template react</code>
           </pre>
-          <p>For example, to create a project called <code>my-project</code>, run:</p>
+          <p>For example, to create a project called <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">my-project</code>, run:</p>
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
             <code>npm create vite@latest my-project -- --template react</code>
           </pre>
@@ -45,7 +45,7 @@ const DeploymentGuide = () => {
         <li>
           <h3 className="text-xl font-semibold mb-2">Configure Tailwind CSS</h3>
           <h4 className="text-lg font-semibold mb-2">Configure Template Paths</h4>
-          <p>In the <code>tailwind.config.js</code> file, specify the paths to all of your template files:</p>
+          <p>In the <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">tailwind.config.js</code> file, specify the paths to all of your template files:</p>
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
             <code>
               {`/** @type {import('tailwindcss').Config} */}
@@ -62,7 +62,7 @@ export default {
             </code>
           </pre>
           <h4 className="text-lg font-semibold mb-2">Add Tailwind Directives to CSS</h4>
-          <p>In the <code>src/index.css</code> file, add the Tailwind directives for the <code>base</code>, <code>components</code>, and <code>utilities</code> layers:</p>
+          <p>In the <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">src/index.css</code> file, add the Tailwind directives for the <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">base</code>, <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">components</code>, and <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">utilities</code> layers:</p>
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
             <code>
               {`@tailwind base;
@@ -82,7 +82,7 @@ export default {
 
         <li>
           <h3 className="text-xl font-semibold mb-2">Start Using Tailwind in Your Project</h3>
-          <p>You can now start using Tailwind classes in your components. For example, modify <code>App.jsx</code> to use Tailwind:</p>
+          <p>You can now start using Tailwind classes in your components. For example, modify <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">App.jsx</code> to use Tailwind:</p>
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
             <code>
               {`export default function App() {
@@ -113,8 +113,8 @@ export default {
 
 
         <li>
-          <h3 className="text-xl font-semibold mb-2">Add a <code> .gitignore </code> File   </h3>
-          <p>React apps typically have a <code> .gitignore </code> file created for you, but if it’s not there, create one with the following contents to avoid pushing unnecessary files:</p>
+          <h3 className="text-xl font-semibold mb-2">Add a <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 "> .gitignore </code> File   </h3>
+          <p>React apps typically have a <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 "> .gitignore </code> file created for you, but if it’s not there, create one with the following contents to avoid pushing unnecessary files:</p>
 
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
             <code>
@@ -140,7 +140,7 @@ build/
 
         <li>
           <h3 className="text-xl font-semibold mb-2">Create a Repository on GitHub </h3>
-          <p> Go to GitHub, log in, and create a new repository. Don’t initialize the repository with a README, <code>.gitignore </code>, or license, as you’ve already set those up locally. </p>
+          <p> Go to GitHub, log in, and create a new repository. Don’t initialize the repository with a README, <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">.gitignore </code>, or license, as you’ve already set those up locally. </p>
 
           
         </li>
@@ -154,7 +154,7 @@ build/
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
             <code>git remote add origin https://github.com/username/repository-name.git </code>
           </pre>
-          <p>Replace <code> username</code> with your GitHub username and <code> repository-name</code> with the name of your GitHub repository.</p>
+          <p>Replace <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 "> username</code> with your GitHub username and <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 "> repository-name</code> with the name of your GitHub repository.</p>
         </li>
 
 
@@ -168,7 +168,7 @@ build/
             <code>git push -u origin master</code>
           </pre>
 
-          <p> If you're using <code> main</code> as the default branch (which GitHub does now), use:</p>
+          <p> If you're using <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 "> main</code> as the default branch (which GitHub does now), use:</p>
 
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
             <code>git push -u origin main</code>
@@ -180,16 +180,16 @@ build/
 
         <li>
           <h3 className="text-xl font-semibold mb-2">Install GitHub Pages</h3>
-          <p>To deploy the app to GitHub Pages, install the <code>gh-pages</code> package as a development dependency:</p>
+          <p>To deploy the app to GitHub Pages, install the <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">gh-pages</code> package as a development dependency:</p>
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
             <code>npm install gh-pages --save-dev</code>
           </pre>
         </li>
 
         <li>
-          <h3 className="text-xl font-semibold mb-2">Update <code>package.json</code></h3>
+          <h3 className="text-xl font-semibold mb-2">Update <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">package.json</code></h3>
           <h4 className="text-lg font-semibold mb-2">Add a Homepage Field</h4>
-          <p>In your <code>package.json</code> file, add a <code>homepage</code> field to specify the URL of your GitHub Pages site:</p>
+          <p>In your <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">package.json</code> file, add a <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">homepage</code> field to specify the URL of your GitHub Pages site:</p>
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
             <code>
               {`"homepage": "https://<your-username>.github.io/<repository-name>"`}
@@ -197,7 +197,7 @@ build/
           </pre>
 
           <h4 className="text-lg font-semibold mb-2">Add Predeploy and Deploy Scripts</h4>
-          <p>Under the <code>"scripts"</code> section in <code>package.json</code>, add the following:</p>
+          <p>Under the <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">"scripts"</code> section in <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">package.json</code>, add the following:</p>
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
             <code>
               {`"scripts": {
@@ -213,8 +213,8 @@ build/
         </li>
 
         <li>
-          <h3 className="text-xl font-semibold mb-2">Modify <code>src/index.js</code> (or <code>src/main.jsx</code>)</h3>
-          <p>To handle routing correctly on GitHub Pages, use <code>HashRouter</code> instead of <code>BrowserRouter</code>. In your <code>src/index.js</code> (or <code>src/main.jsx</code>), update it like this:</p>
+          <h3 className="text-xl font-semibold mb-2">Modify <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">src/index.js</code> (or <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">src/main.jsx</code>)</h3>
+          <p>To handle routing correctly on GitHub Pages, use <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">HashRouter</code> instead of <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">BrowserRouter</code>. In your <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">src/index.js</code> (or <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">src/main.jsx</code>), update it like this:</p>
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
             <code>
               {`import { StrictMode } from 'react';
@@ -235,7 +235,7 @@ createRoot(document.getElementById('root')).render(
 
         <li>
           <h3 className="text-xl font-semibold mb-2">Configure Vite for GitHub Pages</h3>
-          <p>In <code>vite.config.js</code>, set the <code>base</code> to your GitHub repository’s name:</p>
+          <p>In <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">vite.config.js</code>, set the <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">base</code> to your GitHub repository’s name:</p>
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
             <code>
               {`import { defineConfig } from 'vite';
