@@ -1,4 +1,10 @@
 import React from 'react';
+import { Link, Routes } from 'react-router-dom';
+import { Router } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import Myprojects from './MyProjects';
+
 
 const DeploymentGuide = () => {
   return (
@@ -272,6 +278,8 @@ npm run deploy`}
       <h2 className="text-2xl font-semibold mb-4">Conclusion</h2>
       <p>You've successfully created and deployed a React app with Vite and Tailwind CSS to GitHub Pages! Enjoy building your application with modern tooling and fast deployment.</p>
       <p>If you run into any issues, feel free to open an issue on GitHub or consult the <a href="https://vitejs.dev/" className="text-blue-500">official documentation for Vite</a>, <a href="https://tailwindcss.com/" className="text-blue-500">Tailwind CSS</a>, and <a href="https://pages.github.com/" className="text-blue-500">GitHub Pages</a>.</p>
+
+
     </div>
   );
 };
