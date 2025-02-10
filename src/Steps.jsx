@@ -1,9 +1,5 @@
 import React from 'react';
-import { Link, Routes } from 'react-router-dom';
-import { Router } from 'react-router-dom';
-import { Route } from 'react-router-dom';
-import { BrowserRouter } from 'react-router-dom';
-import Myprojects from './MyProjects';
+
 
 
 const DeploymentGuide = () => {
