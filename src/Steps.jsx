@@ -19,9 +19,10 @@ const DeploymentGuide = () => {
         <li>
           <h3 className="text-xl font-semibold mb-2">Create a React App with Vite</h3>
           <p>First, create a new React app using Vite. Run the following command:</p>
+          
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
             <code>npm create vite@latest &lt;project-name&gt; -- --template react</code>
-          </pre>
+          </pre> 
           <p>For example, to create a project called <code className="bg-gray-700 rounded-[5px] pb-[2px] px-1 ">my-project</code>, run:</p>
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
             <code>npm create vite@latest my-project -- --template react</code>
@@ -105,6 +106,7 @@ export default {
         <li>
           <h3 className="text-xl font-semibold mb-2">Making the Git repository and publishing files and folders in it</h3>
           <p>If you have already initialized Git in the folder,you dont need to Steps 6-11. </p>
+
           <p>If you haven't already initialized Git in the folder, run this: </p>
         
           <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">

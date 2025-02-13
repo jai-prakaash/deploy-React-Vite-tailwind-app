@@ -1,17 +1,32 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Routing
-import DeploymentGuide from './Steps'; // Import DeploymentGuide component
-import { Link } from 'react-router-dom';  
+import { Routes, Route, Link } from 'react-router-dom'; // Routing
+import About from './pages/Aboutme';
+import Article from './pages/Article';
+import Home from './pages/Home';
+import DeploymentGuide from './Steps';
 
 function App() {
   return (
     <>
-     
+      <header>
+        <h1> Hello Everyone </h1>
+      </header>
 
-      <DeploymentGuide/>
+      <nav>
+        <ul>
+          <li> <Link to="/home">Home</Link> </li>
+          <li> <Link to="/article">Articles</Link> </li>
+          <li> <Link to="/aboutme">About Me</Link> </li>
+        </ul>
+      </nav>
 
-      
-      </>
+      <Routes>
+        <Route path="/" element={<DeploymentGuide />} /> {/* Default page */}
+        <Route path="/home" element={<Home />} />
+        <Route path="/article" element={<Article />} />
+        <Route path="/aboutme" element={<About />} />
+      </Routes>
+    </>
   );
 }
 
